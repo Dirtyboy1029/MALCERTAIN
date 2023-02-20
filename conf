@@ -1,0 +1,48 @@
+[DEFAULT]
+project_root = /home/lhd/uncertainity_malware
+database_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk
+
+
+[drebin]
+dataset_name = drebin
+malware_dir = %(database_dir)s/%(dataset_name)s/malicious_samples
+benware_dir = %(database_dir)s/%(dataset_name)s/benign_samples
+intermediate_directory = %(project_root)s/datasets/%(dataset_name)s
+
+[androzoo_tesseract]
+dataset_name = androzoo_tesseract
+malware_dir = %(database_dir)s\%(dataset_name)s\malicious_samples
+benware_dir = %(database_dir)s\%(dataset_name)s\benign_samples
+date_stamp = %(database_dir)s\%(dataset_name)s\date_stamp.json
+intermediate_directory = %(project_root)s\datasets\%(dataset_name)s
+
+[oos]
+dataset_name = oos
+malradar_malware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/small_dataset/malware_5794
+malradar_benware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/small_dataset/benign_5758
+drebin_malware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_ml_model/drebin/malware_5560
+drebin_benware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_ml_model/drebin/benign_5558
+androzoo_malware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_ml_model/androzoo/malware_269
+androzoo_benware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_ml_model/androzoo/benign_512
+amd_malware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_ml_model/amd/malware_2000
+amd_benware_dir = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_ml_model/amd/benign_2000
+intermediate_directory = %(project_root)s/datasets/%(dataset_name)s
+
+[adv]
+dataset_name = drebin_adv
+pristine_apk_dir = %(database_dir)s/%(dataset_name)s/pristine_samples
+perturbed_apk_dir = %(database_dir)s/%(dataset_name)s/perturbed_samples
+ood_apk_dir_mal1 = %(database_dir)s/%(dataset_name)s/ood_apk_malware_dir1
+ood_apk_dir_mal2 = %(database_dir)s/%(dataset_name)s/ood_apk_malware_dir2
+family_year_malware1 = %(database_dir)s/%(dataset_name)s/family_year_malware1
+family_year_malware2 = %(database_dir)s/%(dataset_name)s/family_year_malware2
+intermediate_directory =%(project_root)s/datasets/%(dataset_name)s
+
+[metadata]
+naive_data_pool = %(database_dir)s/naive_pool
+
+[experiments]
+oos = %(project_root)s/save/oos/
+adv = %(project_root)s/save/adv/
+drebin = %(project_root)s/save/drebin/
+androzoo = %(project_root)s/save/androzoo/
