@@ -1,2 +1,0 @@
-20--False Negative Rate (FNR) is 1.72806%, False Positive Rate (FPR) is 1.25241%, F1 score is 98.54081%
-30--False Negative Rate (FNR) is 1.36426%, False Positive Rate (FPR) is 1.68593%, F1 score is 98.52373%

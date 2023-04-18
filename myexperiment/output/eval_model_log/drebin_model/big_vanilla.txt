@@ -1,5 +1,0 @@
-10--False Negative Rate (FNR) is 2.30041%, False Positive Rate (FPR) is 1.54594%, F1 score is 98.05342%The balanced accuracy on the test dataset is 98.08079%
-20--False Negative Rate (FNR) is 1.75913%, False Positive Rate (FPR) is 1.36926%, F1 score is 98.41844%The balanced accuracy on the test dataset is 98.43785%
-30--False Negative Rate (FNR) is 1.75913%, False Positive Rate (FPR) is 1.10424%, F1 score is 98.55204%The balanced accuracy on the test dataset is 98.57175%
-40--False Negative Rate (FNR) is 1.71403%, False Positive Rate (FPR) is 1.28092%, F1 score is 98.48588%The balanced accuracy on the test dataset is 98.50480%
-50--False Negative Rate (FNR) is 1.53360%, False Positive Rate (FPR) is 1.19258%, F1 score is 98.62209%The balanced accuracy on the test dataset is 98.63870%

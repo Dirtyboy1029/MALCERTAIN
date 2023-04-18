@@ -1,1 +1,0 @@
-20--False Negative Rate (FNR) is 1.81333%, False Positive Rate (FPR) is 0.99269%, F1 score is 98.58099%The balanced accuracy on the test dataset is 98.60121%
