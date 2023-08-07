@@ -31,12 +31,7 @@ if __name__ == '__main__':
     train_dataset, test_dataset, input_dim = data_preprocessing(feature_type=feature_type, mal_folder=mal_folder,
                                                                 ben_folder=ben_folder, model_type=model_type)
 
-    bay_ens20 = BayesianEnsemble(architecture_type=architecture_type,
-                                 model_directory="/home/lhd/uncertainity_malware/myexperiment/model/" + model_dir + model_type + "_model/bayesian/epoch20")
-
-    bay_ens20.fit(train_set=train_dataset, input_dim=input_dim, EPOCH=20)
-
-    MSG20 = "20--" + bay_ens20.evaluate(test_dataset)
+   
 
     bay_ens30 = BayesianEnsemble(architecture_type=architecture_type,
                                  model_directory="/home/lhd/uncertainity_malware/myexperiment/model/" + model_dir + model_type + "_model/bayesian/epoch30")
