@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/19 16:06 
-# @Author : DirtyBoy 
+
 # @File : Bayesian.py
 
 from experiments.drebin_dataset import data_preprocessing
