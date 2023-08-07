@@ -1,4 +1,26 @@
-parser = argparse.ArgumentParser()
+# -*- coding: utf-8 -*- 
+# @Time : 2022/9/26 16:02 
+# @Author : DirtyBoy 
+# @File : ml_true_flase.py
+from sklearn.utils import shuffle
+import pandas as pd
+import os
+from sklearn.model_selection import train_test_split
+import joblib
+from sklearn import svm  # svm支持向量机
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+import numpy as np
+from scipy.stats import pearsonr
+from sklearn.feature_selection import SelectKBest, f_classif, chi2
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import f1_score, confusion_matrix, accuracy_score
+from myexperiment.ML_acc.utils import get_data_frame, train_test_split_data_frame, feature_selection, evaluate_acc, \
+    evaluate_model
+import argparse
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
     parser.add_argument('-experiment_type', "-e", type=str, default="train", choices=['train', 'test'])
     parser.add_argument('-train_data_size', "-size", type=float, default="1.0")
     parser.add_argument('-feature_num',"-fn", type=int, default=80)
