@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/19 9:27 
-# @Author : DirtyBoy 
+
 # @File : MC_dropout.py
 
 
