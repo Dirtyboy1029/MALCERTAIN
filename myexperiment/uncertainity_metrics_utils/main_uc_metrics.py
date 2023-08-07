@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/28 10:39 
-# @Author : DirtyBoy 
+
 # @File : main_uc_metrics.py
 from experiments.oos import data_preprocessing_get_name as oos_data_preprocessing
 from experiments.adv import data_preprocessing, data_preprocessing_get_name
