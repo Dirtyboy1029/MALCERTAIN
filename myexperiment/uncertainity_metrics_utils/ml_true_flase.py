@@ -14,7 +14,7 @@ from scipy.stats import pearsonr
 from sklearn.feature_selection import SelectKBest, f_classif, chi2
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score, confusion_matrix, accuracy_score
-from myexperiment.ML_acc.utils import get_data_frame, train_test_split_data_frame, feature_selection, evaluate_acc, \
+from myexperiment.uncertainty_metrics_utils.ml_utils import get_data_frame, train_test_split_data_frame, feature_selection, evaluate_acc, \
     evaluate_model
 import argparse
 
