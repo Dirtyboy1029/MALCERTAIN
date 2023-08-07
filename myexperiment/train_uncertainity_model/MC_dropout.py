@@ -32,13 +32,7 @@ if __name__ == '__main__':
     train_dataset, test_dataset, input_dim = data_preprocessing(feature_type=feature_type, mal_folder=mal_folder,
                                                                 ben_folder=ben_folder, model_type=model_type)
 
-    mc_dp20 = MCDropout(architecture_type=architecture_type,
-                        model_directory="/home/lhd/uncertainity_malware/myexperiment/model/" + model_dir + model_type + "_model/mc_dropout/epoch20")
-
-    mc_dp20.fit(train_set=train_dataset, input_dim=input_dim, EPOCH=20)
-
-    MSG20 = "20--" + mc_dp20.evaluate(test_dataset)
-
+   
     mc_dp30 = MCDropout(architecture_type=architecture_type,
                         model_directory="/home/lhd/uncertainity_malware/myexperiment/model/" + model_dir + model_type + "_model/mc_dropout/epoch30")
 
@@ -46,7 +40,6 @@ if __name__ == '__main__':
 
     MSG30 = "30--" + mc_dp30.evaluate(test_dataset)
 
-    MSG = MSG20 + "\n" + MSG30
 
     with open(
             '/home/lhd/uncertainity_malware/myexperiment/output/eval_model_log/' + model_dir + model_type + '_mcdropout.txt',
