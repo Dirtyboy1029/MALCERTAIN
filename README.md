@@ -11,7 +11,7 @@ Our key insight is if we can identify uncertainty metrics that differ greatly be
 We develop the codes on Windows operation system, and run the codes on Ubuntu 20.04. The codes depend on Python 3.8.10. Other packages (e.g., TensorFlow) can be found in the `./requirements.txt`.
 
 ##  Usage
-####1. train base model and uncertainty estimation models
+#### 1. train base model and uncertainty estimation models
 for example: train base model:
  
 
