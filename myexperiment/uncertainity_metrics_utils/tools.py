@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/10/7 21:47 
-# @Author : DirtyBoy 
+
 # @File : tools.py
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
