@@ -15,10 +15,13 @@ We develop the codes on Windows operation system, and run the codes on Ubuntu 20
 for example: 
      train deepdrebin base model: /myexperiment/train_uncertainity_model/Vanilla.py
 
-     python Vanilla.py -train_type drebin -model_type small
+     python Vanilla.py -train_type drebin -model_type small   ## The parameter "small" indicates that the base model is trained with a small training set. 
 
      python Bayesian.py -train_type drebin -model_type small ##train bayesian DNN model to estimation uncertainty
 The other models are trained in a similar way.
+
+
+#### 2. Calculation of uncertainty metrics
  
 
   
