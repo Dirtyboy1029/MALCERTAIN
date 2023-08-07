@@ -17,10 +17,10 @@ if __name__ == '__main__':
     architecture_type = "dnn"
     feature_type = "drebin"
     model_dir = "drebin_model/"
-    if args.train_type == "opcode":
-        architecture_type = "droidectc"
-        feature_type = "opcodeseq"
-        model_dir = "opcode_model/"
+    if args.train_type == "multi":
+        architecture_type = "multimodalitynn"
+        feature_type = "multimodality"
+        model_dir = "multi_model/"
 
     if args.model_type == "big":
         mal_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/big_dataset/malware_11254"
