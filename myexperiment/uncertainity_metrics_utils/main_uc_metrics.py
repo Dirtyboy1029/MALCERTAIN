@@ -43,65 +43,37 @@ if __name__ == '__main__':
             adv_filenames=adv_filenames, true_flase=True, architecture_type=architecture_type)
 
         ##mc-dropout entropy
-        get_mc_dropout_uc(prist_data=prist_data, adv_data=adv_data, prist_filenames=prist_filenames, epoch='20',
-                          adv_filenames=adv_filenames, architecture_type=architecture_type,
-                          model_directory=os.path.join(base_model_path, "mc_dropout/epoch20"), true_flase=True)
+        
 
         get_mc_dropout_uc(prist_data=prist_data, adv_data=adv_data, epoch='30', prist_filenames=prist_filenames,
                           adv_filenames=adv_filenames, architecture_type=architecture_type,
                           model_directory=os.path.join(base_model_path, "mc_dropout/epoch30"), true_flase=True)
 
         ##bayesian entropy
-        get_bay_uc(prist_data=prist_data, adv_data=adv_data, epoch='20', prist_filenames=prist_filenames,
-                   adv_filenames=adv_filenames, model_directory=os.path.join(base_model_path, "bayesian/epoch20"),
-                   architecture_type=architecture_type, true_flase=True)
+        
 
         get_bay_uc(prist_data=prist_data, adv_data=adv_data, epoch='30', prist_filenames=prist_filenames,
                    adv_filenames=adv_filenames, model_directory=os.path.join(base_model_path, "bayesian/epoch20"),
                    architecture_type=architecture_type, true_flase=True)
 
         ##deep ensemble entropy
-        get_deep_ensemble_uc(prist_data=prist_data, adv_data=adv_data, epoch=20, n_members=10,
-                             prist_filenames=prist_filenames, adv_filenames=adv_filenames,
-                             model_directory=os.path.join(base_model_path, "ensemble/n_member10/epoch20"),
-                             architecture_type=architecture_type, true_flase=True)
-
-        get_deep_ensemble_uc(prist_data=prist_data, adv_data=adv_data, epoch=20, n_members=5,
-                             prist_filenames=prist_filenames, adv_filenames=adv_filenames,
-                             model_directory=os.path.join(base_model_path, "ensemble/n_member5/epoch20"),
-                             architecture_type=architecture_type, true_flase=True)
+        
 
         get_deep_ensemble_uc(prist_data=prist_data, adv_data=adv_data, epoch=30, n_members=10,
                              prist_filenames=prist_filenames, adv_filenames=adv_filenames,
                              model_directory=os.path.join(base_model_path, "ensemble/n_member10/epoch30"),
                              architecture_type=architecture_type, true_flase=True)
 
-        get_deep_ensemble_uc(prist_data=prist_data, adv_data=adv_data, epoch=30, n_members=5,
-                             prist_filenames=prist_filenames,
-                             adv_filenames=adv_filenames,
-                             model_directory=os.path.join(base_model_path, "ensemble/n_member5/epoch30"),
-                             architecture_type=architecture_type, true_flase=True)
+        
 
         ##weight ensemble entropy
-        get_weight_ensemble_uc(prist_data=prist_data, adv_data=adv_data,
-                               model_directory=os.path.join(base_model_path, "wensemble/n_member10/epoch20"),
-                               epoch=20, n_members=10, prist_filenames=prist_filenames, adv_filenames=adv_filenames,
-                               architecture_type=architecture_type, true_flase=True)
-
-        get_weight_ensemble_uc(prist_data=prist_data, adv_data=adv_data,
-                               model_directory=os.path.join(base_model_path, "wensemble/n_member5/epoch20"),
-                               epoch=20, n_members=5, prist_filenames=prist_filenames, adv_filenames=adv_filenames,
-                               architecture_type=architecture_type, true_flase=True)
+       
 
         get_weight_ensemble_uc(prist_data=prist_data, adv_data=adv_data,
                                model_directory=os.path.join(base_model_path, "wensemble/n_member10/epoch30"),
                                epoch=30, n_members=10, prist_filenames=prist_filenames, adv_filenames=adv_filenames,
                                architecture_type=architecture_type, true_flase=True)
 
-        get_weight_ensemble_uc(prist_data=prist_data, adv_data=adv_data,
-                               model_directory=os.path.join(base_model_path, "wensemble/n_member10/epoch20"),
-                               epoch=30, n_members=5, prist_filenames=prist_filenames, adv_filenames=adv_filenames,
-                               architecture_type=architecture_type, true_flase=True)
 
     else:
         from myexperiment.uncertainity_metrics_utils.utils import get_label, epoch_ensemble_uc, get_deep_ensemble_uc, \
@@ -116,9 +88,7 @@ if __name__ == '__main__':
         base_path = os.path.join(base_model_path, "vanilla")
         epoch_ensemble_uc(base_path, ood_data, oos_y, oos_filenames, architecture_type)
 
-        get_bay_uc(model_directory=os.path.join(base_model_path, "bayesian/epoch20"), ood_data=ood_data, oos_y=oos_y,
-                   oos_filenames=oos_filenames, epoch=20, architecture_type=architecture_type)
-
+       
         get_bay_uc(model_directory=os.path.join(base_model_path, "bayesian/epoch30"), ood_data=ood_data, oos_y=oos_y,
                    oos_filenames=oos_filenames, epoch=30, architecture_type=architecture_type)
 
@@ -126,44 +96,11 @@ if __name__ == '__main__':
                           oos_y=oos_y,
                           oos_filenames=oos_filenames, epoch=30, architecture_type=architecture_type)
 
-        get_mc_dropout_uc(model_directory=os.path.join(base_model_path, "mc_dropout/epoch20"), ood_data=ood_data,
-                          oos_y=oos_y,
-                          oos_filenames=oos_filenames, epoch=20, architecture_type=architecture_type)
-
-        get_deep_ensemble_uc(model_directory=os.path.join(base_model_path, "ensemble/n_member5/epoch20"),
-                             ood_data=ood_data, architecture_type=architecture_type,
-                             oos_y=oos_y,
-                             oos_filenames=oos_filenames, epoch=20, n_members=5)
-
-        get_deep_ensemble_uc(model_directory=os.path.join(base_model_path, "ensemble/n_member5/epoch30"),
-                             ood_data=ood_data, architecture_type=architecture_type,
-                             oos_y=oos_y,
-                             oos_filenames=oos_filenames, epoch=30, n_members=5)
-
-        get_deep_ensemble_uc(model_directory=os.path.join(base_model_path, "ensemble/n_member10/epoch20"),
-                             ood_data=ood_data, architecture_type=architecture_type,
-                             oos_y=oos_y,
-                             oos_filenames=oos_filenames, epoch=20, n_members=10)
-
+       
         get_deep_ensemble_uc(model_directory=os.path.join(base_model_path, "ensemble/n_member10/epoch30"),
                              ood_data=ood_data, architecture_type=architecture_type,
                              oos_y=oos_y,
                              oos_filenames=oos_filenames, epoch=30, n_members=10)
-
-        get_weight_ensemble_uc(model_directory=os.path.join(base_model_path, "wensemble/n_member5/epoch20"),
-                               ood_data=ood_data, architecture_type=architecture_type,
-                               oos_y=oos_y,
-                               oos_filenames=oos_filenames, epoch=20, n_members=5)
-
-        get_weight_ensemble_uc(model_directory=os.path.join(base_model_path, "wensemble/n_member5/epoch30"),
-                               ood_data=ood_data, architecture_type=architecture_type,
-                               oos_y=oos_y,
-                               oos_filenames=oos_filenames, epoch=30, n_members=5)
-
-        get_weight_ensemble_uc(model_directory=os.path.join(base_model_path, "wensemble/n_member10/epoch20"),
-                               ood_data=ood_data, architecture_type=architecture_type,
-                               oos_y=oos_y,
-                               oos_filenames=oos_filenames, epoch=20, n_members=10)
 
         get_weight_ensemble_uc(model_directory=os.path.join(base_model_path, "wensemble/n_member10/epoch30"),
                                ood_data=ood_data, architecture_type=architecture_type,
