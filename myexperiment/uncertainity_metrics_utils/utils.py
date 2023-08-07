@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/10/7 21:50 
-# @Author : DirtyBoy 
+
 # @File : utils.py
 
 from core.ensemble.model_hp import train_hparam, mc_dropout_hparam, bayesian_ensemble_hparam
