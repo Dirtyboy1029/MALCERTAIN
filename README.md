@@ -13,7 +13,9 @@ We develop the codes on Windows operation system, and run the codes on Ubuntu 20
 ##  Usage
 #### 1. train base model and uncertainty estimation models
 for example: 
-     train base model: 
+     train deepdrebin base model:
+
+     python Vanilla
  
 
   
