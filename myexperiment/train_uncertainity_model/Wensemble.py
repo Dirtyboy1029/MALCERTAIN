@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/19 16:26 
-# @Author : DirtyBoy 
+
 # @File : Wensemble.py
 import argparse
 from experiments.drebin_dataset import data_preprocessing
