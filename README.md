@@ -29,9 +29,14 @@ get uncertainty metrics: myexperiment/uncertainity_metrics_utils/main_uc_metrics
 
 Get all the metrics and save them separately as csv files
 
-#### 3. train correction model
+#### 3. train correction model and correction
 
-myexperiment/uncertainity_metrics_utils/ml_true_flase.py
+train：myexperiment/uncertainity_metrics_utils/ml_true_flase.py
+
+      python ml_true_flase.py -experiment_type train -save_model y -data_type small_drebin
+      ###  experiment_type: Type of experiment,training correction model or resultant correction.
+      ###  save_model: Whether to save trained correction models
+      ### data_type: Data types for training corrective models，(small_drebin,small_multi)
 
 
 
