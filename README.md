@@ -24,6 +24,12 @@ The other models are trained in a similar way.
 #### 2. Calculation of uncertainty metrics
 
 get uncertainty metrics: myexperiment/uncertainity_metrics_utils/main_uc_metrics.py
+
+python main_uc_metrics.py -model_arch drebin -model_type small -data_type ood
+
+Get all the metrics and save them separately as csv files
+
+
  
 
   
