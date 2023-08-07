@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/26 16:02 
-# @Author : DirtyBoy 
+
 # @File : ml_true_flase.py
 from sklearn.utils import shuffle
 import pandas as pd
