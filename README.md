@@ -1,3 +1,3 @@
 # MALCERTAIN
 
-"MalCertain: Enhancing Deep Learning base Android Malware Detection by Tackling Prediction Uncertainty"
+"Enhancing Deep Neural Network Based Android Malware Detection by Tackling Prediction Uncertainty"
