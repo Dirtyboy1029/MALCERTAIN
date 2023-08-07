@@ -13,9 +13,12 @@ We develop the codes on Windows operation system, and run the codes on Ubuntu 20
 ##  Usage
 #### 1. train base model and uncertainty estimation models
 for example: 
-     train deepdrebin base model:
+     train deepdrebin base model: /myexperiment/train_uncertainity_model/Vanilla.py
 
-     python Vanilla
+     python Vanilla.py -train_type drebin -model_type small
+
+     python Bayesian.py -train_type drebin -model_type small ##train bayesian DNN model to estimation uncertainty
+The other models are trained in a similar way.
  
 
   
