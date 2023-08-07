@@ -1,4 +1,4 @@
-# conduct the group of 'out of distribution' experiments on drebin dataset
+# conduct the group of 'out of distribution' experiments on drebin datasets
 import os
 import sys
 import random
