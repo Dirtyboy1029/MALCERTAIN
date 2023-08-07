@@ -43,7 +43,7 @@ train：myexperiment/uncertainity_metrics_utils/ml_true_flase.py
 
 correction： myexperiment/uncertainity_metrics_utils/ml_true_flase.py
 
-      python ml_true_flase.py -experiment_type test -data_type small_drebin -banlance n -train_data_size 1.0 -test_model_type small_amd
+      python ml_true_flase.py -experiment_type test -data_type small_amd -banlance n -train_data_size 1.0 -test_model_type small_drebin
 
       ###  Show the results of training the correction model using the uncertainty metrics of the drebin dataset obtained from deepdrebin's model, using the unbalanced full set of data, and correct the AMD dataset.
       
