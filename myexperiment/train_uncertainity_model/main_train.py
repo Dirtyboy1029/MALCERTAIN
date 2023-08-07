@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/10/7 12:03 
-# @Author : DirtyBoy 
+
 # @File : main_train.py
 from experiments.drebin_dataset import data_preprocessing
 from core.ensemble.bayesian_ensemble import BayesianEnsemble
