@@ -38,7 +38,8 @@ train：myexperiment/uncertainity_metrics_utils/ml_true_flase.py
       ###  experiment_type: Type of experiment,training correction model or resultant correction.
       ###  save_model: Whether to save trained correction models
       ###  data_type: Data types for training corrective models，(small_drebin,small_multi)
-      ### train_data_size: The effect of the scale of the training data on the corrective model,[1.0,0.8,0.4,0.2,0.1]
+      ###  train_data_size: The effect of the scale of the training data on the corrective model,[1.0,0.8,0.4,0.2,0.1]
+      ###  banlance: The effect of whether the training data is balanced or not on the corrective model
 
 
 
