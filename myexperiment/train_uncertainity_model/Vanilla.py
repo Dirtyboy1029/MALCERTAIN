@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/19 10:47 
-# @Author : DirtyBoy 
+
 # @File : Vanilla.py
 import numpy as np
 from experiments.drebin_dataset import data_preprocessing
