@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*- 
-# @Time : 2022/9/23 9:02 
-# @Author : DirtyBoy 
-# @File : utils_new.py
+
+# @File : adv_utils.py
 from core.ensemble.model_hp import train_hparam, mc_dropout_hparam, bayesian_ensemble_hparam
 from experiments.adv import data_preprocessing_get_name
 from core.ensemble.deep_ensemble import WeightedDeepEnsemble
