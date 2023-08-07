@@ -16,17 +16,17 @@ if __name__ == '__main__':
     architecture_type = "dnn"
     feature_type = "drebin"
     model_dir = "drebin_model/"
-    if args.train_type == "opcode":
-        architecture_type = "droidectc"
-        feature_type = "opcodeseq"
-        model_dir = "opcode_model/"
+    if args.train_type == "multi":
+        architecture_type = "multimodalitynn"
+        feature_type = "multimodality"
+        model_dir = "multi_model/"
 
     if args.model_type == "big":
-        mal_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/big_dataset/malware_11254"
-        ben_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/big_dataset/benign_10385"
+        mal_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/big_dataset/malware"
+        ben_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/big_dataset/benign"
     else:
-        mal_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/small_dataset/malware_5794"
-        ben_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/small_dataset/benign_5800"
+        mal_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/small_dataset/malware"
+        ben_folder = "/home/public/rmt/heren/experiment/cl-exp/LHD_apk/apk/train_dnn_model/small_dataset/benign"
 
     train_dataset, test_dataset, input_dim = data_preprocessing(feature_type=feature_type, mal_folder=mal_folder,
                                                                 ben_folder=ben_folder, model_type=model_type)
