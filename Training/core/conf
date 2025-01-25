@@ -1,0 +1,9 @@
+[DEFAULT]
+project_root = /home/lhd/MalCertain/Training/
+
+[metadata]
+naive_data_pool = /home/public/rmt/heren/experiment/cl-exp/LHD_apk/naive_pool
+intermediate_directory = %(project_root)s/config
+
+
+
