@@ -1,7 +1,7 @@
 # MALCERTAIN
 
 
-This code repository prepared for our ICSE 2024 paper titled **MALCERTAIN:Enhancing Deep Neural Network Based Android Malware Detection by Tackling Prediction Uncertainty**.
+This code repository prepared for our ICSE 2024 paper titled **MALCERTAIN:Enhancing Deep Neural Network Based Android Malware Detection by Tackling Prediction Uncertainty** and our TOSEM 2026 paper titled **Towards Improved DNN-Based Android Malware Detection via Uncertainty Estimation**.
  
 ## Overview
 In this paper, we take the first step to explore how we can leverage the prediction uncertainty to improve DNN-based Android malware detection models.
